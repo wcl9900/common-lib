@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PullToRefreshLayout">
+        <attr name="pullDownEnable" format="boolean" />
+        <attr name="pullUpEnable" format="boolean" />
+
+        <attr name="refresh_succeed" format="string" />
+        <attr name="refresh_fail" format="string" />
+        <attr name="pull_to_refresh" format="string" />
+        <attr name="release_to_refresh" format="string" />
+        <attr name="refreshing" format="string" />
+
+        <attr name="load_succeed" format="string" />
+        <attr name="load_fail" format="string" />
+        <attr name="pullup_to_load" format="string" />
+        <attr name="release_to_load" format="string" />
+        <attr name="loading" format="string" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="head_view"/>
+    <item type="id" name="pull_icon"/>
+    <item type="id" name="refreshing_icon"/>
+    <item type="id" name="state_tv"/>
+    <item type="id" name="state_iv"/>
+    
+    
+    <item type="id" name="loadmore_view"/>
+    <item type="id" name="pullup_icon"/>
+    <item type="id" name="loading_icon"/>
+    <item type="id" name="loadstate_tv"/>
+    <item type="id" name="loadstate_iv"/>
+</resources>

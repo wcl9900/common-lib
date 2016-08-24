@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:cb="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/textviewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:padding="@dimen/view_padding"
+                android:text="@string/text_view"
+                android:textSize="@dimen/big_font"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/textviewTitle"
+                android:padding="@dimen/view_padding"
+                android:textColorHighlight="@android:color/holo_blue_dark"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/small_font"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/justifyTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:padding="@dimen/view_padding"
+                android:text="@string/justify_text_view"
+                android:textSize="@dimen/big_font"
+                android:textStyle="bold">
+            </TextView>
+
+            <com.arta.lib.demo.widget.aligntextview.justifytext.library.JustifyTextView
+                android:id="@+id/justifyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/justifyTitle"
+                android:background="@drawable/aligntextview_blue_select"
+                android:padding="@dimen/view_padding"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/small_font"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/alignTextViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:padding="@dimen/view_padding"
+                android:text="@string/align_text_view"
+                android:textSize="@dimen/big_font"
+                android:textStyle="bold">
+            </TextView>
+
+            <com.arta.lib.widget.aligntextview.AlignTextView
+                android:id="@+id/alignTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/alignTextViewTitle"
+                android:background="@color/red2"
+                android:padding="@dimen/view_padding"
+                android:ellipsize="marquee"
+                cb:align="left"
+                android:textSize="@dimen/small_font"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/cbAlignTextViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:padding="@dimen/view_padding"
+                android:text="@string/cb_align_text_view"
+                android:textSize="@dimen/big_font"
+                android:textStyle="bold">
+            </TextView>
+
+            <com.arta.lib.widget.aligntextview.CBAlignTextView
+                android:id="@+id/cbAlignTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/cbAlignTextViewTitle"
+                android:background="@drawable/aligntextview_green_select"
+                android:paddingTop="@dimen/view_padding"
+                android:autoLink="all"
+                cb:punctuationConvert="true"
+                android:textColorHighlight="@android:color/holo_blue_dark"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/small_font"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

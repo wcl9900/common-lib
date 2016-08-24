@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+	
+    <com.arta.lib.widget.circle.CircleMenuView
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#c3d2a1"
+        ></com.arta.lib.widget.circle.CircleMenuView>
+    
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circle_bg"
+        android:text="+"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-20dp"
+        />
+</RelativeLayout>

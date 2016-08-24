@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:background="@android:color/transparent">
+	
+	
+	    <com.arta.lib.widget.miscwidgets.widget.Panel
+	            android:id="@+id/leftPanel1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            app:closedHandle="@drawable/ic_launcher"
+	            app:content="@+id/myDragGridView"
+	            app:handle="@+id/panelHandle"
+	            app:openedHandle="@drawable/ic_launcher"
+	            app:position="left" >
+	
+	            <Button
+	                android:id="@+id/panelHandle"
+	                android:layout_width="33dip"
+	                android:layout_gravity="center_vertical"
+	                android:layout_height="wrap_content" />
+	
+	            
+			    <GridView
+			        android:id="@+id/myDragGridView"
+			        android:layout_width="300dp"
+			        android:layout_height="600dp"
+			        android:layout_marginLeft="10dp"
+			        android:listSelector="@android:color/transparent"
+			        android:horizontalSpacing="5dp"
+			        android:verticalSpacing="5dp"
+			        android:numColumns="3" >
+	    		</GridView>
+	        </com.arta.lib.widget.miscwidgets.widget.Panel>
+	        
+	    <com.arta.lib.widget.miscwidgets.widget.Panel
+	            android:id="@+id/rightPanel1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            app:closedHandle="@drawable/ic_launcher"
+	            app:content="@+id/myDragGridView1"
+	            app:handle="@+id/panelHandle1"
+	            app:openedHandle="@drawable/ic_launcher"
+	            app:position="right" >
+	
+	            <Button
+	                android:id="@+id/panelHandle1"
+	                android:layout_width="33dip"
+	                android:layout_gravity="center_vertical"
+	                android:layout_height="wrap_content" />
+	
+	            
+			    <ListView
+			        android:id="@+id/myDragGridView1"
+			        android:layout_width="200dp"
+			        android:layout_height="600dp"
+			        android:layout_marginRight="10dp"
+			        android:listSelector="@android:color/transparent" >
+	    		</ListView>
+	        </com.arta.lib.widget.miscwidgets.widget.Panel>
+	</RelativeLayout>
+</FrameLayout>

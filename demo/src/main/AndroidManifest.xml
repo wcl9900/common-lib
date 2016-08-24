@@ -1,0 +1,777 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.arta.lib.demo"
+    android:versionCode="1"
+    android:versionName="1.0">
+    
+    <uses-permission android:name="com.android.vending.BILLING" /> 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <supports-screens android:anyDensity="true" />
+    
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application 
+        android:name="com.arta.lib.demo.widget.typefacehelper.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="demo"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity
+           android:name="com.arta.lib.demo.main.MainActivity" 
+            android:label="demo-main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.arta.lib.demo.widget.customfastscrollview.CustomFastScrollViewActivity"></activity>
+        
+        <activity android:name="com.arta.lib.demo.widget.indexablelistview.IndexableListViewActivity"></activity>
+        
+        <activity android:name="com.arta.lib.demo.widget.listviewanimations.ListViewAnimationsMainActivity"></activity>
+        
+        <activity android:name="com.arta.lib.demo.widget.menudrawer.SamplesActivity"></activity>
+        
+        <activity
+            android:name="com.arta.lib.demo.widget.listviewanimations.appearanceexamples.AppearanceExamplesActivity"
+            android:theme="@style/ListViewAnimationTheme"
+            android:label="@string/appearance" />
+        <activity
+            android:name="com.arta.lib.demo.widget.listviewanimations.GoogleCardsActivity"
+            android:theme="@style/ListViewAnimationTheme"
+            android:label="@string/googlecards" />
+        <activity
+            android:name="com.arta.lib.demo.widget.listviewanimations.itemmanipulationexamples.ItemManipulationsExamplesActivity"
+            android:theme="@style/ListViewAnimationTheme"
+            android:label="@string/itemmanipulation" />
+        <activity
+            android:name="com.arta.lib.demo.widget.listviewanimations.itemmanipulationexamples.DragAndDropActivity"
+            android:theme="@style/ListViewAnimationTheme"
+            android:label="@string/draganddrop" />
+        <activity
+            android:name="com.arta.lib.demo.widget.listviewanimations.itemmanipulationexamples.SwipeDismissActivity"
+            android:theme="@style/ListViewAnimationTheme"
+            android:label="@string/swipedismiss" />
+        <activity
+            android:name="com.arta.lib.demo.widget.listviewanimations.itemmanipulationexamples.AnimateDismissActivity"
+            android:theme="@style/ListViewAnimationTheme"
+            android:label="@string/animateremoval" />
+        <activity
+            android:name="com.arta.lib.demo.widget.listviewanimations.itemmanipulationexamples.AnimateAdditionActivity"
+            android:theme="@style/ListViewAnimationTheme"
+            android:label="@string/animateaddition" />
+        <activity
+            android:name="com.arta.lib.demo.widget.listviewanimations.GridViewActivity"
+            android:theme="@style/ListViewAnimationTheme"
+            android:label="@string/gridviewexample" />
+        <activity
+            android:name="com.arta.lib.demo.widget.listviewanimations.itemmanipulationexamples.ExpandableListItemActivity"
+            android:theme="@style/ListViewAnimationTheme"
+            android:label="@string/expandablelistitemadapter" />
+        <activity android:name="com.arta.lib.demo.widget.listviewanimations.BaseActivity"></activity>
+        
+        
+        <activity android:name="com.arta.lib.demo.widget.menudrawer.WindowSample" />
+        <activity android:name="com.arta.lib.demo.widget.menudrawer.LeftDrawerSample" />
+        <activity android:name="com.arta.lib.demo.widget.menudrawer.ListActivitySample" />
+        <activity android:name="com.arta.lib.demo.widget.menudrawer.ViewPagerSample" />
+        <activity
+            android:name="com.arta.lib.demo.widget.menudrawer.RightDrawerSample"
+            android:theme="@style/SampleTheme.RightDrawer" />
+        <activity
+            android:name="com.arta.lib.demo.widget.menudrawer.TopDrawerSample"
+            android:theme="@style/SampleTheme.TopDrawer">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.arta.lib.demo.widget.menudrawer.SamplesActivity" />
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.menudrawer.BottomDrawerSample"
+            android:theme="@style/SampleTheme.BottomDrawer" />
+        <activity
+            android:name="com.arta.lib.demo.widget.menudrawer.LayoutSample"
+            android:theme="@style/SampleTheme.TopDrawer" />
+        <activity android:name="com.arta.lib.demo.widget.menudrawer.StaticDrawerSample" />
+        <activity android:name="com.arta.lib.demo.widget.menudrawer.FragmentSample" />
+        <activity
+            android:name="com.arta.lib.demo.widget.menudrawer.ActionBarSherlockSample"
+            android:theme="@style/SampleTheme.Sherlock" />
+        <activity android:name="com.arta.lib.demo.widget.menudrawer.LeftOverlaySample" />
+        <activity
+            android:name="com.arta.lib.demo.widget.menudrawer.TopOverlaySample"
+            android:theme="@style/SampleTheme.TopDrawer" />
+        <activity android:name="com.arta.lib.demo.widget.menudrawer.RightOverlaySample" />
+        <activity
+            android:name="com.arta.lib.demo.widget.menudrawer.BottomOverlaySample"
+            android:theme="@style/SampleTheme.BottomDrawer" />
+        
+        <activity android:name="com.arta.lib.demo.widget.residemenu.MenuActivity"></activity>
+        
+
+        
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.ListSamples"
+            android:label="ViewPager Indicator">
+        </activity>
+
+        <!-- CIRCLE INDICATOR -->
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleCirclesDefault"
+            android:label="Circles/Default">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleCirclesInitialPage"
+            android:label="Circles/Initial Page">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleCirclesSnap"
+            android:label="Circles/Snap">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleCirclesStyledLayout"
+            android:label="Circles/Styled (via layout)"
+            android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleCirclesStyledMethods"
+            android:label="Circles/Styled (via methods)"
+            android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleCirclesStyledTheme"
+            android:label="Circles/Styled (via theme)"
+            android:theme="@style/StyledIndicators">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleCirclesWithListener"
+            android:label="Circles/With Listener">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+
+
+
+        <!-- ICON INDICATOR -->
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleIconsDefault"
+            android:label="Icons/Default">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+
+
+
+
+        <!-- LINE INDICATOR -->
+        <activity
+                android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleLinesDefault"
+                android:label="Lines/Default">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleLinesStyledLayout"
+                android:label="Lines/Styled (via layout)"
+                android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleLinesStyledMethods"
+                android:label="Lines/Styled (via methods)"
+                android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleLinesStyledTheme"
+                android:label="Lines/Styled (via theme)"
+                android:theme="@style/StyledIndicators">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+
+
+
+        <!-- TITLE INDICATOR -->
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleTitlesBottom"
+            android:label="Titles/Default (Bottom)">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleTitlesCenterClickListener"
+            android:label="Titles/Center Click Listener">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleTitlesDefault"
+            android:label="Titles/Default">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleTitlesInitialPage"
+            android:label="Titles/Initial Page">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleTitlesStyledLayout"
+            android:label="Titles/Styled (via layout)"
+            android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleTitlesStyledMethods"
+            android:label="Titles/Styled (via methods)"
+            android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleTitlesStyledTheme"
+            android:label="Titles/Styled (via theme)"
+            android:theme="@style/StyledIndicators">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleTitlesTriangle"
+            android:label="Titles/Triangle Style">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleTitlesWithListener"
+            android:label="Titles/With Listener">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+
+
+
+        <!-- TAB INDICATOR -->
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleTabsDefault"
+            android:label="Tabs/Default"
+            android:theme="@style/Theme.PageIndicatorDefaults">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleTabsStyled"
+            android:label="Tabs/Styled"
+            android:theme="@style/StyledIndicators">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+      <activity
+          android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleTabsWithIcons"
+          android:label="Tabs/With Icons"
+          android:theme="@style/StyledIndicators">
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+        </intent-filter>
+      </activity>
+
+
+
+        <!-- UNDERLINE INDICATOR -->
+        <activity
+                android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleUnderlinesDefault"
+                android:label="Underlines/Default">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleUnderlinesNoFade"
+                android:label="Underlines/No Fade">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleUnderlinesStyledLayout"
+                android:label="Underlines/Styled (via layout)"
+                android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleUnderlinesStyledMethods"
+                android:label="Underlines/Styled (via methods)"
+                android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.arta.lib.demo.widget.viewpagerindicator.SampleUnderlinesStyledTheme"
+                android:label="Underlines/Styled (via theme)"
+                android:theme="@style/StyledIndicators">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        
+        
+        <!-- pull_to_refresh -->   
+        <activity
+            android:name="com.arta.lib.demo.widget.pulltorefresh.PullRefreshMainActivity"
+            android:label="PullToRefresh Samples" >
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.pulltorefresh.PullToRefreshListActivity"
+            android:label="PtR ListView" >
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.pulltorefresh.PullToRefreshListFragmentActivity"
+            android:label="PtR ListView Fragment" >
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.pulltorefresh.PullToRefreshListInViewPagerActivity"
+            android:label="PtR ListView in ViewPager" >
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.pulltorefresh.PullToRefreshGridActivity"
+            android:label="PtR GridView" >
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.pulltorefresh.PullToRefreshExpandableListActivity"
+            android:label="PtR ExpandableListView" >
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.pulltorefresh.PullToRefreshWebViewActivity"
+            android:label="PtR WebView" >
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.pulltorefresh.PullToRefreshScrollViewActivity"
+            android:label="PtR ScrollView" >
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.pulltorefresh.PullToRefreshHorizontalScrollViewActivity"
+            android:label="PtR HorizontalScrollView" >
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.pulltorefresh.PullToRefreshViewPagerActivity"
+            android:label="PtR ViewPager" >
+        </activity>
+        <activity
+            android:name="com.arta.lib.demo.widget.pulltorefresh.PullToRefreshWebView2Activity"
+            android:label="PtR WebView Advanced" >
+        </activity>
+
+        
+       	<!-- DragSortListView -->
+       	<activity android:name="com.arta.lib.demo.widget.dragsortlistview.DragSortListViewMainActivity"
+                  android:label="DragSortListView">
+        </activity>
+        <activity android:name="com.arta.lib.demo.widget.dragsortlistview.TestBedDSLV"
+                  android:label="Basic usage" />
+        <activity android:name="com.arta.lib.demo.widget.dragsortlistview.ArbItemSizeDSLV"
+                  android:label="Arbitrary item heights" />
+        <activity android:name="com.arta.lib.demo.widget.dragsortlistview.WarpDSLV"
+                  android:label="Warp" />
+        <activity android:name="com.arta.lib.demo.widget.dragsortlistview.BGHandle"
+                  android:label="Background handle" />
+        <activity android:name="com.arta.lib.demo.widget.dragsortlistview.Sections"
+                  android:label="Sections" />
+        <activity android:name="com.arta.lib.demo.widget.dragsortlistview.CursorDSLV"
+                  android:label="Cursor-backed" />
+        <activity android:name="com.arta.lib.demo.widget.dragsortlistview.MultipleChoiceListView"
+                  android:label="Multi-select list" />
+        <activity android:name="com.arta.lib.demo.widget.dragsortlistview.SingleChoiceListView"
+                  android:label="Single-choice list" />
+        
+        <!-- DragGridView -->
+        <activity android:name="com.arta.lib.demo.widget.draggridview.DraggableGridViewSampleActivity"></activity>
+        
+        
+        <!-- PhotoView -->
+        <activity android:name="com.arta.lib.demo.widget.photoview.PhotoViewLauncherActivity">
+        </activity>
+        <activity android:name="com.arta.lib.demo.widget.photoview.SimpleSampleActivity" />
+        <activity android:name="com.arta.lib.demo.widget.photoview.ViewPagerActivity" />
+        <activity android:name="com.arta.lib.demo.widget.photoview.RotationSampleActivity" />
+        <activity android:name="com.arta.lib.demo.widget.photoview.AUILSampleActivity" />
+        
+        
+        <!-- CustomShapeImageView -->
+        <activity android:name="com.arta.lib.demo.widget.customimageshapeview.CustomShapeImageViewActivity"></activity>
+        
+        
+        <!-- SmoothProgressBar -->
+        <activity android:name="com.arta.lib.demo.widget.smoothprogressbar.SmoothProgressBarMainActivity"/>
+        <activity
+            android:name="com.arta.lib.demo.widget.smoothprogressbar.MakeCustomActivity"
+            android:label="Make your own"/>
+        
+        <!-- ProgressWheel -->
+        <activity android:name="com.arta.lib.demo.widget.progresswheel.ProgressWheelMainActivity"></activity>
+        
+        
+        <!-- FlowTextView -->
+        <activity android:name="com.arta.lib.demo.widget.flowtextview.FlowTextViewMainActivity"></activity>
+        
+        
+        <!-- FormEditTextValidator -->
+   		<activity android:name="com.arta.lib.demo.widget.formedittextvalidator.FormEditTextValidatorActivity"/>
+		<activity android:name="com.arta.lib.demo.widget.formedittextvalidator.LayoutExampleActivity" />
+		<activity android:name="com.arta.lib.demo.widget.formedittextvalidator.EmailOrCreditCard" />
+		<activity
+			android:name="com.arta.lib.demo.widget.formedittextvalidator.SettingsActivity"
+			android:label="Preferences" >
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.arta.lib.demo.widget.formedittextvalidator.EditTextFormExampleActivity" />
+		</activity>
+		
+		
+		<!-- BadgeView -->
+		<activity android:name="com.arta.lib.demo.widget.badgeview.BadgeViewMainActivity"></activity>
+		
+		
+		<!-- FlipView -->
+	    <activity android:name="com.arta.lib.demo.widget.flipview.FlipViewMainActivity"/>
+	    <activity android:name="com.arta.lib.demo.widget.flipview.FlipTextViewActivity"/>
+	    <activity android:name="com.arta.lib.demo.widget.flipview.FlipButtonActivity"/>
+	    <activity android:name="com.arta.lib.demo.widget.flipview.FlipComplexLayoutActivity"/>
+	    <activity android:name="com.arta.lib.demo.widget.flipview.FlipDeleteAdapterActivity"/>
+	    <activity android:name="com.arta.lib.demo.widget.flipview.FlipAsyncContentActivity"/>
+	    <activity android:name="com.arta.lib.demo.widget.flipview.FlipTextViewAltActivity"/>
+	    <activity android:name="com.arta.lib.demo.widget.flipview.FlipHorizontalLayoutActivity"/>
+	    <activity android:name="com.arta.lib.demo.widget.flipview.FlipTextViewXmlActivity"/>
+	    <activity android:name="com.arta.lib.demo.widget.flipview.Issue5Activity"/>
+	    <activity android:name="com.arta.lib.demo.widget.flipview.FlipFragmentActivity"/>
+	    <activity android:name="com.arta.lib.demo.widget.flipview.FlipDynamicAdapterActivity"/>
+	    <activity android:name="com.arta.lib.demo.widget.flipview.FlipWebViewActivity"/>
+	    <activity android:name="com.arta.lib.demo.widget.flipview.Issue51Activity"/>
+	    
+	    <!-- CircularProgressButton -->
+	    <activity android:name="com.arta.lib.demo.widget.circularprogressbutton.CircularProgressButtonMainActivity"></activity>
+	    
+	    <!-- RoundImageView -->
+	    <activity android:name="com.arta.lib.demo.widget.roundimageview.RoundImageViewMainActivity"></activity>
+	    
+	    <!-- Crouton -->
+	    <activity android:name="com.arta.lib.demo.widget.crouton.CroutonMainActivity"></activity>
+	    
+	    <!-- ToolTips -->
+	    <activity android:name="com.arta.lib.demo.widget.supertooltips.ToolTipsMainActivity"></activity>
+	    
+	    <!-- PagedDragdropGrid -->
+	    <activity android:name="com.arta.lib.demo.widget.pageddragdropgrid.PagedDragdropGridActivity"></activity>
+	    
+	    <!-- AnimTabsView -->
+	    <activity android:name="com.arta.lib.demo.widget.animtabsview.AnimTabsViewMainActivity"></activity>
+	    
+	    <!-- PagerSlidingTabStrip -->
+	    <activity android:name="com.arta.lib.demo.widget.pagerslidingtabstrip.PagerSlidingTabStripMainActivity"></activity>
+	    
+	    <!-- ActivityTransition -->
+	    <activity android:name="com.arta.lib.demo.animation.activitytransition.ActivityTransitionMainActivity"></activity>
+	    <activity android:name="com.arta.lib.demo.animation.activitytransition.SecondActivity"></activity> 
+	    <activity android:name="com.arta.lib.demo.widget.cricle.CircleMainActivity"></activity> 
+	    <activity android:name="com.arta.lib.demo.widget.cricle.CircleMenuActivity"></activity> 
+	    <activity android:name="com.arta.lib.demo.widget.page.PageTurnMainActivity"></activity> 
+	    <activity android:name="com.arta.lib.demo.widget.glowpadview.glowpadview"></activity> 
+	    
+	    <!-- StaggeredGrid -->
+	    <activity android:name="com.arta.lib.demo.widget.staggeredgrid.StaggeredGridMainActivity"/>
+        <activity android:name="com.arta.lib.demo.widget.staggeredgrid.StaggeredGridActivity"/>
+        <activity android:name="com.arta.lib.demo.widget.staggeredgrid.StaggeredGridActivityFragment"/>
+        <activity android:name="com.arta.lib.demo.widget.staggeredgrid.StaggeredGridEmptyViewActivity" />
+        <activity android:name="com.arta.lib.demo.widget.staggeredgrid.ListViewActivity"/>
+        
+        <!-- Cropper -->
+        <activity android:name="com.arta.lib.demo.widget.croppersample.CropperMainActivity"></activity>
+        
+        <!-- MultiTouch -->
+        <activity android:name="com.arta.lib.demo.widget.multitouch.MutilTouchActivity"></activity>
+        
+        <!-- Titanic -->
+        <activity android:name="com.arta.lib.demo.widget.titanic.TitanicMainActivity"></activity>
+        
+        <!-- JumpingBeans -->
+        <activity android:name="com.arta.lib.demo.widget.jumpingbeans.JumpingBeansMainActivity"></activity>
+        
+        <!-- DirectionalViewpager -->
+        <activity android:name="com.arta.lib.demo.widget.directionalviewpager.DirectionalViewpagerSampleActivity"></activity>
+        
+        <!-- Curl -->
+        <activity android:name="com.arta.lib.demo.widget.curl.CurlActivity"></activity>
+        
+        <!-- SlidingUpPanel -->
+        <activity android:name="com.arta.lib.demo.widget.slidinguppanel.SlidingUpPanelDemoActivity"></activity>
+        
+        <!-- Shimmer -->
+        <activity android:name="com.arta.lib.demo.widget.shimmer.ShimmerMainActivity"></activity>
+        
+        <!-- SquareProgressBar -->
+        <activity android:name="com.arta.lib.demo.widget.square_progressbar.SquareProgressBarMainActivity"></activity>
+        
+        <!-- TreeView -->
+        <activity android:name="com.arta.lib.demo.widget.treeview.TreeViewMainActivity"></activity>
+       
+        <!-- NumberProgressBar -->
+        <activity android:name="com.arta.lib.demo.widget.numberprogressbar.NumberProgressBarMainActivity"></activity>
+        
+        <!-- MultiDirectionSlidingDrawer -->
+        <activity android:name="com.arta.lib.demo.widget.multidirectionsdrawer.MultiDirectionSlidingDrawerMainActivity"></activity>
+        
+        <!-- MiscWidgets -->
+        <activity android:name="com.arta.lib.demo.widget.miscwidgets.MiscWidgetsTestActivity"></activity>
+                <activity android:name=".TestPanels" android:label="@string/panels_app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.arta.lib.demo.widget.miscwidgets.TestPanels" android:label="@string/panels_app_name"/>
+        <activity android:name="com.arta.lib.demo.widget.miscwidgets.TestSwitcher" android:label="@string/switcher_app_name"/>
+        <activity android:name="com.arta.lib.demo.widget.miscwidgets.TestSmoothButton" android:label="@string/smoothbutton_app_name"/>
+        <activity android:name="com.arta.lib.demo.widget.miscwidgets.TestInterpolators" android:label="@string/interpolators_app_name"/>
+        <activity android:name="com.arta.lib.demo.widget.miscwidgets.TestTheme" android:label="@string/theme_app_name" android:theme="@style/GreenTheme"/>
+        <activity android:name="com.arta.lib.demo.widget.miscwidgets.TestVirtualKeyboard" android:label="@string/virtual_keyboard_app_name"/>
+        <activity android:name="com.arta.lib.demo.widget.miscwidgets.TestCustomTitle" android:label="@string/custom_title_app_name" />
+        
+        <!-- GifView -->
+        <activity android:name="com.arta.lib.demo.widget.gifview.GifViewTestActivity"></activity>
+        
+        <!-- MultiActionTextview -->
+        <activity android:name="com.arta.lib.demo.widget.multiactiontextview.MultiActionTextviewMainActivity"></activity>
+        
+        <!-- SwipeBackLayoutActivity -->
+        <activity android:name="com.arta.lib.demo.widget.swipebacklayout.SwipeBackLayoutActivity"/>
+        
+        <!-- Wheel -->
+		<activity android:name="com.arta.lib.demo.widget.wheel.WheelDemoActivity"/>
+		<activity android:name="com.arta.lib.demo.widget.wheel.TimeActivity" android:label="Time">
+		    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="kankan.wheel.WHEEL_SAMPLE"/>
+            </intent-filter>
+		</activity>
+        <activity android:name="com.arta.lib.demo.widget.wheel.Time2Activity" android:label="Time 2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="kankan.wheel.WHEEL_SAMPLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.arta.lib.demo.widget.wheel.DateActivity" android:label="Date">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="kankan.wheel.WHEEL_SAMPLE"/>
+            </intent-filter>
+        </activity>
+		<activity android:name="com.arta.lib.demo.widget.wheel.PasswActivity" android:label="Password">
+		    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="kankan.wheel.WHEEL_SAMPLE"/>
+            </intent-filter>
+		</activity>
+        <activity android:name="com.arta.lib.demo.widget.wheel.SlotMachineActivity" android:label="Slot Machine">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="kankan.wheel.WHEEL_SAMPLE"/>
+            </intent-filter>
+        </activity>
+		<activity android:name="com.arta.lib.demo.widget.wheel.CitiesActivity" android:label="Cities">
+		    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="kankan.wheel.WHEEL_SAMPLE"/>
+            </intent-filter>
+		</activity>
+        
+		<!-- KenBurnsView -->
+        <activity
+            android:name="com.arta.lib.demo.widget.kenburnsview.KenBurnsViewMainActivity"/>
+
+        <activity
+            android:name="com.arta.lib.demo.widget.kenburnsview.SingleImageActivity" />
+
+        <activity
+            android:name="com.arta.lib.demo.widget.kenburnsview.MultiImageActivity" />
+
+        <activity android:name="com.arta.lib.demo.widget.kenburnsview.FromURLActivity" />
+		
+        <!-- SlideExpandable -->
+        <activity android:name="com.arta.lib.demo.widget.slideexpandable.SlideExpandableActivity" />
+        
+        <!-- SwipeLayout -->
+        <activity android:name="com.arta.lib.demo.widget.swipelayout.SwipeLayoutMainActivity" />
+        
+        <!-- ExpandableTextview -->
+        <activity android:name="com.arta.lib.demo.widget.expandabletextview.ExpandableTextviewDemoActivity" />
+        
+        <!-- TextDrawable -->
+        <activity android:name="com.arta.lib.demo.widget.textdrawable.TextDrawableMainActivity" />
+        <activity android:name="com.arta.lib.demo.widget.textdrawable.ListActivity" />
+        
+        <!-- ImageViewZoom -->
+        <activity android:name="com.arta.lib.demo.widget.imagezoom.ImageViewZoomTestActivity" />
+        
+        <!-- SelectableRoundedImageViewMainActivity -->
+        <activity android:name="com.arta.lib.demo.widget.selectableroundedimageview.SelectableRoundedImageViewMainActivity" />
+        
+        <!-- SwipeMenuListView -->
+        <activity android:name="com.arta.lib.demo.widget.swipemenulistview.SwipeMenuListViewMainActivity" />
+        <activity android:name="com.arta.lib.demo.widget.swipemenulistview.SimpleActivity" />
+        <activity android:name="com.arta.lib.demo.widget.swipemenulistview.DifferentMenuActivity" />
+        
+        <!-- WaveView -->
+        <activity android:name="com.arta.lib.demo.widget.waveview.WaveViewMainActivity" />
+        
+        <!-- ToggleButton -->
+        <activity android:name="com.arta.lib.demo.widget.togglebutton.ToggleButtonMainActivity" />
+        
+        <!-- SwitchButton -->
+        <activity android:name="com.arta.lib.demo.widget.switchbutton.SwitchButtonMainActivity" />
+        
+        <!-- DragItemView -->
+        <activity android:name="com.arta.lib.demo.widget.dragitemview.DragItemMainActivity" />
+        
+        <!-- TypefaceHelper -->
+        <activity android:name="com.arta.lib.demo.widget.typefacehelper.TypefaceMainActivity" />
+        <activity android:name="com.arta.lib.demo.widget.typefacehelper.SimpleExampleActivity" />
+        <activity android:name="com.arta.lib.demo.widget.typefacehelper.ActionbarExampleActivity" />
+        <activity android:name="com.arta.lib.demo.widget.typefacehelper.ListExampleActivity" />
+        <activity android:name="com.arta.lib.demo.widget.typefacehelper.SpinnerExampleActivity" />
+        <activity android:name="com.arta.lib.demo.widget.typefacehelper.MultipleTypefacesExampleActivity" />
+        <activity android:name="com.arta.lib.demo.widget.typefacehelper.DynamicExampleActivity" />
+
+        
+        <activity android:name="com.arta.lib.demo.widget.matchtextview.MatchTextViewActivity" />
+
+        <!-- PullToRefreshView -->
+        <activity android:name="com.arta.lib.demo.widget.pulltorefreshview.PullToRefreshViewActivity" android:screenOrientation="portrait"/>
+        
+        <!-- AsymmetricGridView -->
+        <activity android:name="com.arta.lib.demo.widget.asymmetricgridview.AsymmetricGridViewMainActivity"></activity>
+        
+        <!-- ExpandableLayout -->
+        <activity android:name="com.arta.lib.demo.widget.expandablelayout.ExpandableLayoutMainActivity"></activity>
+        
+        <!-- PullRefreshLayout -->
+        <activity android:name="com.arta.lib.demo.widget.pullrefreshlayout.PullRefreshLayoutDemoActivity"></activity>
+        
+        <!-- XListView -->
+        <activity android:name="com.arta.lib.demo.widget.xlistview.XListViewActivity"></activity>
+        
+        <!-- pullable_pulltorefresh -->
+        <activity android:name="com.arta.lib.demo.widget.pulltorefreshandload.PullablePullRefreshViewMainActivity">
+        </activity>
+        <activity android:name="com.arta.lib.demo.widget.pulltorefreshandload.PullableExpandableListViewActivity" >
+        </activity>
+        <activity android:name="com.arta.lib.demo.widget.pulltorefreshandload.PullableGridViewActivity" >
+        </activity>
+        <activity android:name="com.arta.lib.demo.widget.pulltorefreshandload.PullableListViewActivity" >
+        </activity>
+        <activity android:name="com.arta.lib.demo.widget.pulltorefreshandload.PullableScrollViewActivity" >
+        </activity>
+        <activity android:name="com.arta.lib.demo.widget.pulltorefreshandload.PullableWebViewActivity" >
+        </activity>
+        <activity android:name="com.arta.lib.demo.widget.pulltorefreshandload.PullableImageViewActivity" >
+        </activity>
+        <activity android:name="com.arta.lib.demo.widget.pulltorefreshandload.PullableTextViewActivity" >
+        </activity>
+        
+        <!-- GridViewwithheaderfooter -->
+        <activity android:name="com.arta.lib.demo.widget.gridviewwithhf.GridViewWithHFActivity"></activity>
+        
+        <!-- OverScrollView -->
+        <activity android:name="com.arta.lib.demo.widget.overscrollview.OverScrollViewActivity"></activity>
+        
+        <!-- ConvenientBanner -->
+        <activity android:name="com.arta.lib.demo.convenientbanner.ConvenientBannerMainActivity"></activity>
+        
+        <!-- PercentSupportExtends -->
+        <activity android:name="com.arta.lib.demo.percent_support.PercentSupportExtendsMainActivity"></activity>
+        <activity android:name="com.arta.lib.demo.percent_support.ListViewTestActivity"></activity>
+        <activity android:name="com.arta.lib.demo.percent_support.ItemActivity"></activity>
+        
+        <!-- aligntextview -->
+        <activity android:name="com.arta.lib.demo.widget.aligntextview.example.AlignTextViewExample"></activity>
+        
+        <!-- TagCloud -->
+        <activity android:name="com.arta.lib.demo.widget.tagcloud.TagCloudMainActivity"></activity>
+    </application>
+</manifest>

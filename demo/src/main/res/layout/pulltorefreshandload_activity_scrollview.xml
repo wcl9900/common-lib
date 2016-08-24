@@ -1,0 +1,56 @@
+<com.arta.lib.widget.pulltorefreshandload.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/pulltorefreshandload_refresh_head" />
+    <!-- 支持所有实现Pullable接口的View -->
+
+    <com.arta.lib.widget.pulltorefreshandload.view.PullableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/imagesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pulltorefreshandload_h" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pulltorefreshandload_i" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pulltorefreshandload_j" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pulltorefreshandload_k" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pulltorefreshandload_l" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pulltorefreshandload_m" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.arta.lib.widget.pulltorefreshandload.view.PullableScrollView>
+
+    <include layout="@layout/pulltorefreshandload_load_more" />
+
+</com.arta.lib.widget.pulltorefreshandload.PullToRefreshLayout>

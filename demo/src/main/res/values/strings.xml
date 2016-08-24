@@ -1,0 +1,83 @@
+<resources>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="app_name">demo</string>
+    <string name="hello">hello</string>
+    <string name="sort_by_continent">Sort by Continent</string>
+    <string name="sort_by_name">Sort by Name</string>
+    
+    <string name="menu_donate">Buy me a beer!</string>
+    <string name="menu_beer">Buy me a beer!</string>
+    <string name="menu_beer2">Buy me 2 beers!</string>
+    <string name="menu_beer3">Buy me 5 beers!</string>
+    <string name="menu_beer4">Buy me 10 beers!</string>
+    <string name="menu_github">Github</string>
+    <string name="googlecards">Google cards example</string>
+    <string name="gridview">GridView example</string>
+    <string name="appearance">Appearance Animation</string>
+    <string name="limit">Limit to 2</string>
+    <string name="itemmanipulation">Item Manipulation</string>
+    <string name="gridviewexample">GridView example</string>
+    <string name="draganddrop">Drag and Drop</string>
+    <string name="swipedismiss">Swipe to dismiss</string>
+    <string name="animateremoval">Animate dismiss</string>
+    <string name="animateaddition">Animate addition</string>
+    <string name="removeselected">Remove selected</string>
+    <string name="expandablelistitemadapter">Expand list items</string>
+    <string name="itemdeleted">Item deleted</string>
+    <string name="taptoundo">Tap to undo</string>
+    <string name="explainexpand">Tap on cards to expand or collapse them</string>
+    <string name="expandorcollapsecard">This is card number %d</string>
+    <string name="blue">blue</string>
+    <plurals name="countdown_seconds">
+        <item quantity="one">Dismissing in 1...</item>
+        <item quantity="other">Dismissing in %d...</item>
+    </plurals>
+    
+    <string name="countdown_dismissing">Dismissing</string>
+    
+    
+    
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="google">Google</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="wordpress">Wordpress</string>
+    <string name="myspace">Myspace</string>
+    <string name="start_app">Starting application:</string>
+    
+    
+    
+    
+    
+    <string name="sample_content">Sample of dragging the content.\nThe menu consists of a ListView, for which the
+        active position is saved through configuration changes.\nAdditionally, if the menu is open, a back press will
+        close it.
+    </string>
+
+    <string name="sample_window">Sample of dragging the entire window.\nThe menu is a simple ScrollView, with a click
+        listener set on each item.\nThe drawer will animate slightly open, to make it more discoverable.\nAdditionally,
+        if the menu is open, a back press will close it.
+    </string>
+
+    <string name="sample_listactivity">Sample of how to use the drawer with ListActivity.\nWhen running on ICS or
+        greater, the ActionBar up button will blink until clicked by the user. This is done to make the menu more
+        discoverable.\nAdditionally, if the menu is open, a back press will close it.
+    </string>
+
+    <string name="sample_rightmenu">This sample shows how to position the menu to the right of the content.\nRun on
+        an API14+ device to see how it interacts with the overflow button.
+    </string>
+
+    <string name="sample_topmenu">This sample shows how to position the menu above the content.</string>
+
+    <string name="sample_bottommenu">This sample shows how to position the menu below the content.</string>
+
+    <string name="sample_layout">This sample shows how to use the drawer in a layout file.
+        \nThe top drawer is used in this sample.
+    </string>
+
+    <string name="sample_static">This sample shows how to attach a drawer that is always visible.</string>
+    
+    <string name="loading">Loading</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TabSortView">
+        <attr name="drawable_default" format="reference" />
+        <attr name="drawable_up" format="reference" />
+        <attr name="drawable_down" format="reference" />
+        <attr name="selected_sortbutton" format="integer"></attr>
+        <attr name="selected_sortbutton_sorttype" format="enum">
+            <enum name="default_no" value="0"/>
+            <enum name="up_to_down" value="1"/>
+            <enum name="down_to_up" value="2"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

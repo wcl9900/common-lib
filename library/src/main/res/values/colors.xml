@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+        <color name="holo_blue">#FF33E5B5</color>
+
+        <color name="transparent">#00000000</color>
+        <color name="yellow">#FFFFFF00</color>
+        
+	    <!-- The default background of the menu. -->
+	    <color name="md__defaultBackground">#FF555555</color>
+</resources>

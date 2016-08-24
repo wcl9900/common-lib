@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="data_loading_vf" />
+    <item type="id" name="data_loading_load_content" />
+    <item type="id" name="data_loading_load_failure" />
+    <item type="id" name="data_loading_load_loading" />
+    <item type="id" name="data_loading_tv_loading_msg" />
+    <item type="id" name="data_loading_tv_loading_fail" />
+</resources>

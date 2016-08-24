@@ -1,0 +1,59 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.arta.lib.widget.circularprogressbutton.CircularProgressButton
+            android:id="@+id/btnWithIcons1"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:cornerRadius="48dp"
+            app:iconComplete="@drawable/circularprogressbutton__action_accept"
+            app:iconError="@drawable/circularprogressbutton__action_cancel"
+            app:textIdle="@string/Upload" />
+
+        <com.arta.lib.widget.circularprogressbutton.CircularProgressButton
+            android:id="@+id/btnWithIcons2"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:cornerRadius="48dp"
+            app:iconComplete="@drawable/circularprogressbutton__action_accept"
+            app:iconError="@drawable/circularprogressbutton__action_cancel"
+            app:textIdle="@string/Upload" />
+
+        <com.arta.lib.widget.circularprogressbutton.CircularProgressButton
+            android:id="@+id/btnWithText1"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:textComplete="@string/Complete"
+            app:textError="@string/Error"
+            app:textIdle="@string/Upload" />
+
+        <com.arta.lib.widget.circularprogressbutton.CircularProgressButton
+            android:id="@+id/btnWithText2"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:textComplete="@string/Complete"
+            app:textError="@string/Error"
+            app:textIdle="@string/Upload" />
+    </LinearLayout>
+
+</ScrollView>

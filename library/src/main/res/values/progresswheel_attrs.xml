@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="ProgressWheel">
+        <attr name="pw_text" format="string" />
+        <attr name="pw_textColor" format="color" />
+        <attr name="pw_textSize" format="dimension" />
+        <attr name="pw_barColor" format="color" />
+        <attr name="pw_rimColor" format="color" />
+        <attr name="pw_rimWidth" format="dimension" />
+        <attr name="pw_spinSpeed" format="dimension" />
+        <attr name="pw_delayMillis" format="integer" />
+        <attr name="pw_circleColor" format="color" />
+        <attr name="pw_radius" format="dimension" />
+        <attr name="pw_barWidth" format="dimension" />
+        <attr name="pw_barLength" format="dimension" />
+        <attr name="pw_contourColor" format="color"/>
+        <attr name="pw_contourSize" format="dimension"/>
+    </declare-styleable>   
+</resources>

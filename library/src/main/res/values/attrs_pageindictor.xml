@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PageIndicatorView">
+        <attr name="piv_selectedColor" format="color" />
+        <attr name="piv_unselectedColor" format="color" />
+        <attr name="piv_circle_selected_radius" format="dimension" />
+        <attr name="piv_circle_unselected_radius" format="dimension" />
+        <attr name="piv_spacing" format="dimension" />
+        <attr name="piv_indictor_selected_width" format="dimension" />
+        <attr name="piv_indictor_selected_height" format="dimension" />
+        <attr name="piv_indictor_unselected_width" format="dimension" />
+        <attr name="piv_indictor_unselected_height" format="dimension" />
+		<attr name="piv_style">
+			<flag name="circle" value="0" />
+			<flag name="rect" value="1" />
+		</attr>
+    </declare-styleable>   
+</resources>

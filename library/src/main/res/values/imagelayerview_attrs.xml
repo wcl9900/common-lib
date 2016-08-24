@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageLayerView">  
+        <attr name="image" format="reference " />  
+        <attr name="layer" format="reference " />  
+        <attr name="imageWidth" format="enum|dimension">
+            <enum name="fill_parent" value="-1"/>
+            <enum name="match_parent" value="-1"/>
+            <enum name="wrap_content" value="-2"/>
+        </attr>
+        <attr name="imageHeight" format="enum|dimension">  
+            <enum name="fill_parent" value="-1"/>
+            <enum name="match_parent" value="-1"/>
+            <enum name="wrap_content" value="-2"/>
+        </attr>
+        <attr name="scaleType" format="enum">
+            <enum name="matrix" value="0"/>
+            <enum name="fitXY" value="1"/>
+            <enum name="fitStart" value="2"/>
+            <enum name="fitCenter" value="3"/>
+            <enum name="fitEnd" value="4"/>
+            <enum name="center" value="5"/>
+            <enum name="centerCrop" value="6"/>
+            <enum name="centerInside" value="7"/>
+        </attr>
+        <attr name="maxWidth" format="dimension"></attr>
+        <attr name="maxHeight" format="dimension"></attr>
+        <attr name="adjustViewBounds" format="boolean"></attr>
+        
+        <attr name="imagePaddingLeft" format="dimension"></attr>
+        <attr name="imagePaddingRight" format="dimension"></attr>
+        <attr name="imagePaddingTop" format="dimension"></attr>
+        <attr name="imagePaddingBottom" format="dimension"></attr>
+        
+        <attr name="layerPaddingLeft" format="dimension"></attr>
+        <attr name="layerPaddingRight" format="dimension"></attr>
+        <attr name="layerPaddingTop" format="dimension"></attr>
+        <attr name="layerPaddingBottom" format="dimension"></attr>
+    </declare-styleable>  
+</resources>

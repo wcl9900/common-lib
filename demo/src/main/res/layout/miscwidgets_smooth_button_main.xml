@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.arta.lib.demo"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="4dip"
+    android:background="#7b96bd"
+>
+	<com.arta.lib.widget.miscwidgets.widget.SmoothButton
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:text="smooth button 1"
+	    android:background="@drawable/miscwidgets_red_button"
+   	    app:transitionDrawable="@drawable/miscwidgets_red_transition_list"
+	    app:transitionDrawableLength="8"
+	    app:transitionTextColorUp="#eee"
+	    app:transitionTextColorDown="#aaa"
+	/>
+	<com.arta.lib.widget.miscwidgets.widget.SmoothButton
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:text="smooth button 2"
+	    android:background="@drawable/miscwidgets_red_button"
+   	    app:transitionDrawable="@drawable/miscwidgets_red_transition_list"
+	    app:transitionDrawableLength="8"
+	    app:transitionTextColorUp="#eee"
+	    app:transitionTextColorDown="#aaa"
+	/>
+	<com.arta.lib.widget.miscwidgets.widget.SmoothButton
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:text="smooth button 3"
+	    android:background="@drawable/miscwidgets_silver_button"
+   	    app:transitionDrawable="@drawable/miscwidgets_silver_transition_list"
+	    app:transitionDrawableLength="8"
+	/>
+	<com.arta.lib.widget.miscwidgets.widget.SmoothButton
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:text="smooth button 4"
+	    android:background="@drawable/miscwidgets_silver_button"
+   	    app:transitionDrawable="@drawable/miscwidgets_silver_transition_list"
+	    app:transitionDrawableLength="8"
+	/>
+</LinearLayout>

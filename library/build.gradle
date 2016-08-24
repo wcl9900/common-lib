@@ -1,0 +1,69 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    productFlavors{
+        library{}
+    }
+    android.libraryVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.aar')) {
+                //这里修改apk文件名
+                def fileName = "${variant.productFlavors[0].name}-v${defaultConfig.versionName}.aar"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+}
+
+dependencies {
+    androidTestCompile files('libs/actionbarsherlock-with-source.jar')
+    androidTestCompile files('libs/android-http-async-with-source.jar')
+    compile 'com.android.support:support-v4:23.3.0'
+    androidTestCompile files('libs/android-volley-with-source.jar')
+    compile files('libs/annotations.jar')
+    androidTestCompile files('libs/DBTool-with-source.jar')
+    compile files('libs/easyandroidanimationslibrary-v0.5.jar')
+    compile files('libs/gson-2.6.2-withsource.jar')
+    androidTestCompile files('libs/nineoldandroids-2.4.0-with-source.jar')
+    androidTestCompile files('libs/picasso-2.3.2.jar')
+    androidTestCompile files('libs/rebound-v0.3.3.jar')
+    compile files('libs/RecyclerView.jar')
+    androidTestCompile files('libs/stickylistheaders_lib.jar')
+    androidTestCompile files('libs/tileview-with-source.jar')
+    androidTestCompile files('libs/trinea-common-lib-with-source.jar')
+    compile files('libs/unity-classes.jar')
+    compile files('libs/universal-image-loader-1.9.4-with-sources.jar')
+    androidTestCompile files('libs/xUtil-2.6.14-with-source.jar')
+    androidTestCompile files('libs/ziputil-with-source.jar')
+    androidTestCompile files('libs/android-async-http-1.4.9.jar')
+    androidTestCompile files('libs/httpclient-4.4.1.2.jar')
+    compile files('libs/okio-1.8.0.jar')
+    compile files('libs/okhttputils-2_6_1.jar')
+    compile files('libs/okhttp-3.3.1.jar')
+    compile files('libs/picasso-2.3.2.jar')
+    compile files('libs/nineoldandroids-2.4.0-with-source.jar')
+    compile files('libs/rebound-v0.3.3.jar')
+    compile files('libs/xutils-3.3.36.jar')
+}

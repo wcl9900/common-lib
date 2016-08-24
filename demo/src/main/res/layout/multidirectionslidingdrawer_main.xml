@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res/com.arta.lib.demo">
+	
+	<Button
+		android:id="@+id/button_open"
+		android:layout_width="100dp"
+		android:layout_height="wrap_content"
+		android:text="@string/open"
+		android:layout_centerInParent="true"
+		android:visibility="gone" />
+		
+	<com.arta.lib.widget.multidirectionsdrawer.MultiDirectionSlidingDrawer
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/drawer"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:direction="leftToRight"
+		app:msdHandle="@+id/handle"
+		app:msdContent="@+id/content">
+		<include
+			android:id="@id/content"
+			layout="@layout/multidirectionslidingdrawer_pen_content" />
+		<Button
+			android:id="@id/handle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Toggle"/>
+	</com.arta.lib.widget.multidirectionsdrawer.MultiDirectionSlidingDrawer>
+</RelativeLayout>

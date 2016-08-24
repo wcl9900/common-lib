@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- DataLoaindLayout 数据加载中消息 -->
+    <string name="loading_layout_loading">加载中...</string>
+    <!-- DataLoaindLayout 数据加载失败消息 -->
+    <string name="loading_layout_fail">加载失败</string>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.arta.lib.demo.widget.tagcloud.TagCloudMainActivity">
+
+    <com.arta.lib.widget.tagcloudlib.TagCloudView
+        android:id="@+id/tag_cloud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:autoScrollMode="uniform"
+        app:lightColor="#ffff0000"
+        app:darkColor="#ff00ff00"
+        app:radiusPercent="0.7"
+        app:scrollSpeed="1"/>
+
+</LinearLayout>
