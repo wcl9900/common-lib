@@ -44,6 +44,8 @@ public class ExpandableLayout extends RelativeLayout
     private FrameLayout contentLayout;
     private FrameLayout headerLayout;
 
+    private OnHeaderClickListener onHeaderClickListener;
+
     public ExpandableLayout(Context context)
     {
         super(context);
@@ -91,10 +93,16 @@ public class ExpandableLayout extends RelativeLayout
             {
                 if (!isAnimationRunning)
                 {
-                    if (contentLayout.getVisibility() == VISIBLE)
+                    if(onHeaderClickListener != null){
+                        onHeaderClickListener.OnHeaderClick(headerView, ExpandableLayout.this);
+                    }
+
+                    if (contentLayout.getVisibility() == VISIBLE) {
                         collapse(contentLayout);
-                    else
+                    }
+                    else {
                         expand(contentLayout);
+                    }
 
                     isAnimationRunning = true;
                     new Handler().postDelayed(new Runnable()
@@ -110,6 +118,10 @@ public class ExpandableLayout extends RelativeLayout
         });
 
         typedArray.recycle();
+    }
+
+    public void setOnHeaderClickListener(OnHeaderClickListener onHeaderClickListener) {
+        this.onHeaderClickListener = onHeaderClickListener;
     }
 
     private void expand(final View v)
@@ -215,5 +227,9 @@ public class ExpandableLayout extends RelativeLayout
                 }
             }, duration);
         }
+    }
+
+    public interface OnHeaderClickListener{
+        void OnHeaderClick(View headerView, ExpandableLayout expandableLayout);
     }
 }

@@ -31,7 +31,7 @@ public class TabBarView extends LinearLayout implements OnClickListener{
 	private int currentItem = defaultSelected;
 	
 	private boolean selectEnable = true;
-	
+	private boolean disableSelected = false;
 	private boolean repeatClickEnable = false;
 	
 	private int tabBarViewId = -1;
@@ -58,6 +58,7 @@ public class TabBarView extends LinearLayout implements OnClickListener{
 		tabBarViewId = ta.getResourceId(R.styleable.TabBarView_tabViewId, R.id.tabbarview_item);
 		repeatClickEnable = ta.getBoolean(R.styleable.TabBarView_repeatClickEnable, repeatClickEnable);
 		defaultSelected = ta.getInteger(R.styleable.TabBarView_defaultSelectIndex, defaultSelected);
+		setDefaultSelectedTab(defaultSelected);
 		ta.recycle();
 	}
 	
@@ -77,7 +78,11 @@ public class TabBarView extends LinearLayout implements OnClickListener{
 	public void setClickSelectEnable(boolean selectEnable){
 		this.selectEnable = selectEnable;
 	}
-	
+
+	public void setDisableSelected(boolean disableSelected) {
+		this.disableSelected = disableSelected;
+	}
+
 	/**
 	 * 设定已选选项卡是否可以重复点击
 	 * @param enable
@@ -198,9 +203,13 @@ public class TabBarView extends LinearLayout implements OnClickListener{
 				else{
 					changeTabView.setSelected(true);
 				}
+
+				changeTabView.setEnabled(!disableSelected);
+
 				continue;
 			}
 			tabViewList.get(i).setSelected(false);
+			tabViewList.get(i).setEnabled(true);
 		}
 	}
 }

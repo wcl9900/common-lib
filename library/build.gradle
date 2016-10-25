@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven'
 
 android {
     compileSdkVersion 19
@@ -22,25 +23,64 @@ android {
         }
     }
 
-    productFlavors{
-        library{}
-    }
-    android.libraryVariants.all { variant ->
-        variant.outputs.each { output ->
-            def outputFile = output.outputFile
-            if (outputFile != null && outputFile.name.endsWith('.aar')) {
-                //这里修改apk文件名
-                def fileName = "${variant.productFlavors[0].name}-v${defaultConfig.versionName}.aar"
-                output.outputFile = new File(outputFile.parent, fileName)
+//    productFlavors{
+//        library{}
+//    }
+//    android.libraryVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def outputFile = output.outputFile
+//            if (outputFile != null && outputFile.name.endsWith('.aar')) {
+//                //这里修改apk文件名
+//                def fileName = "${variant.productFlavors[0].name}-v${defaultConfig.versionName}.aar"
+//                output.outputFile = new File(outputFile.parent, fileName)
+//            }
+//        }
+//    }
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: 'file:///D:/Work/repo/')
+            pom.project{
+                groupId 'com.wcl'
+                artifactId 'library'
+                version '1.0'
+                packaging 'aar'
+                description '项目架构库'
             }
         }
     }
 }
 
+//def getRepositoryUsername() {
+//    return hasProperty('NEXUS_USERNAME') ? NEXUS_USERNAME : ""
+//}
+//def getRepositoryPassword() {
+//    return hasProperty('NEXUS_PASSWORD') ? NEXUS_PASSWORD : ""
+//}
+//
+//uploadArchives{
+//    configuration = configurations.archives
+//    repositories{
+//        mavenDeployer{
+//            pom.groupId = GROUP
+//            pom.artifactId = POM_ARTIFACT_ID
+//            pom.version = VERSION_NAME
+//            repository(url: RELEASE_REPOSITORY_URL) {
+//                authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
+//            }
+//            snapshotRepository(url: SNAPSHOT_REPOSITORY_URL) {
+//                authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
+//            }
+//        }
+//    }
+//}
+
 dependencies {
     androidTestCompile files('libs/actionbarsherlock-with-source.jar')
     androidTestCompile files('libs/android-http-async-with-source.jar')
-    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.android.support:support-v4:+'
     androidTestCompile files('libs/android-volley-with-source.jar')
     compile files('libs/annotations.jar')
     androidTestCompile files('libs/DBTool-with-source.jar')
