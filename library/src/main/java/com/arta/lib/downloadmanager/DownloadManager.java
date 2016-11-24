@@ -173,15 +173,23 @@ public final class DownloadManager {
 
     public void removeDownload(int index) throws DbException {
         DownloadInfo downloadInfo = downloadInfoList.get(index);
-        db.delete(downloadInfo);
-        stopDownload(downloadInfo);
-        downloadInfoList.remove(index);
+        removeDownload(downloadInfo);
     }
 
     public void removeDownload(DownloadInfo downloadInfo) throws DbException {
+        if(downloadInfo == null) return;
         db.delete(downloadInfo);
         stopDownload(downloadInfo);
         downloadInfoList.remove(downloadInfo);
+        File file = new File(downloadInfo.getFileSavePath());
+        if(file.exists()){
+            file.delete();
+        }
+    }
+
+    public void removeDownload(String url) throws DbException {
+        DownloadInfo downloadInfo = getDownloadInfo(url);
+        removeDownload(downloadInfo);
     }
 
     public DownloadInfo getDownloadInfo(String url){

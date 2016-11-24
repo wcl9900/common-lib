@@ -1,5 +1,7 @@
 package com.arta.lib.downloadmanager;
 
+import com.arta.lib.util.StringUtils;
+
 import org.xutils.db.annotation.Column;
 import org.xutils.db.annotation.Table;
 
@@ -119,7 +121,9 @@ public class DownloadInfo {
         if (!(o instanceof DownloadInfo)) return false;
 
         DownloadInfo that = (DownloadInfo) o;
-
+        if(StringUtils.isEquals(this.url, that.getUrl())){
+            return true;
+        }
         if (id != that.id) return false;
 
         return true;

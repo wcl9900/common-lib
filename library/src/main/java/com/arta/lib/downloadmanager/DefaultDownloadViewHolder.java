@@ -34,12 +34,12 @@ public class DefaultDownloadViewHolder extends DownloadViewHolder {
 
     @Override
     public void onSuccess(File result) {
-        Toast.makeText(x.app(), "下载完成", Toast.LENGTH_LONG).show();
+
     }
 
     @Override
     public void onError(Throwable ex, boolean isOnCallback) {
-        Toast.makeText(x.app(), "下载失败", Toast.LENGTH_LONG).show();
+
     }
 
     @Override
