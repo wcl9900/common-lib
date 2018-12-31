@@ -3,8 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/common-lib.iml" filepath="$PROJECT_DIR$/common-lib.iml" />
+      <module fileurl="file://F:\android-studio-project\tenglong9900\common-lib\common-lib.iml" filepath="F:\android-studio-project\tenglong9900\common-lib\common-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://F:\android-studio-project\tenglong9900\common-lib\demo\demo.iml" filepath="F:\android-studio-project\tenglong9900\common-lib\demo\demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://F:\android-studio-project\tenglong9900\common-lib\library\library.iml" filepath="F:\android-studio-project\tenglong9900\common-lib\library\library.iml" />
     </modules>
   </component>
 </project>
